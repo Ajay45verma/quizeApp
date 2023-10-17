@@ -1,0 +1,167 @@
+nav {
+    display: flex;
+    justify-content: space-between;
+    background-color: #218380;
+    color: #ffffff;
+    width: auto;
+    height: 10%;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+nav li {
+    margin: 0 10px;
+}
+
+nav a {
+    text-decoration: none;
+    color: inherit;
+}
+
+main {
+    background-color: #f8f8f8;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: left;
+    width: 400px;
+    margin-left: 35%;
+    height: auto;
+}
+
+main * {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+
+/* Add styles for option buttons */
+
+.answer-options {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+
+label {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #218380;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+label:hover {
+    background-color: #175e5e;
+}
+
+input[type="radio"] {
+    display: none;
+    margin-right: 10px;
+}
+
+input[type="radio"]:checked+label {
+    background-color: #79c4c4;
+}
+
+.answer-options label input[type="radio"]:checked+span {
+    background-color: #061110;
+    /* change the color as needed */
+}
+
+#start-btn {
+    font-size: 15px;
+    background-color: #175e5e;
+    color: #ffffff;
+    border-radius: 5px;
+    align-content: center;
+    display: flex;
+    border: none;
+    align-items: center;
+    padding: 5px 10px;
+}
+
+
+/* Add styles for completed page */
+
+#completed-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+#completed-container h2 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+#completed-container p {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+#name-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+#name-form label {
+    font-size: 20px;
+}
+
+#name-form input[type="text"] {
+    font-size: 20px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+}
+
+#name-form button[type="submit"] {
+    font-size: 20px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: #218380;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#name-form button[type="submit"]:hover {
+    background-color: #175e5e;
+}
+
+#answer-options label {
+    margin-right: 10px;
+    /* adjust the value as needed */
+    margin-bottom: 20px;
+    /* adjust the value as needed */
+}
+
+#next-btn {
+    font-size: 15px;
+    background-color: #175e5e;
+    color: #ffffff;
+    border-radius: 5px;
+    box-shadow: none;
+    border: none;
+    padding: 5px 10px;
+}

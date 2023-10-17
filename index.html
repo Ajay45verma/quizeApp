@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./asset/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <title>Codedamn - Quiz Project</title>
+</head>
+
+<body>
+    <header>
+        <a id=leaderboard>View Highscores <i class="fas fa-hand-point-left fa-lg"></i>
+        </i></a>
+
+    </header>
+    <nav>
+        <ul>
+            <li><a href="leaderboard.html">Highscores</a></li>
+            <li class="nav-text"><a href="#">Time left</a></li>
+
+        </ul>
+    </nav>
+    <main>
+        <div id="quiz-container">
+            <div id="start-container">
+                <h2>Welcome to the Quiz!</h2>
+                <button id="start-btn">Start Quiz</button>
+                <span id="timer">50</span>
+            </div>
+            <div id="question-container">
+                <h2 id="question-text"></h2>
+                <div id="answer-options"></div>
+                <p id="answer-state"></p>
+                <button id="next-btn">Next</button>
+            </div>
+
+            <div id="completed-container">
+                <h2>Quiz Completed!</h2>
+                <p>Your Score: <span id="quiz-score"></span></p>
+                <form id="name-form">
+                    <label for="name">Enter your name:</label>
+                    <input type="text" id="name" required>
+                    <button type="submit">Submit</button>
+
+                </form>
+                <button id="reset-button">Reset Quiz</button>
+                <button id="show">show</button>
+            </div id="leaderboard-container">
+        </div>
+        </div>
+    </main>
+    <script src="asset/script.js"></script>
+</body>
+
+</html>
